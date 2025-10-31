@@ -28,7 +28,7 @@ const AddMovieForm = () => {
   const handleSubmit = async (event)=> {
     event.preventDefault()
     try {
-        const response = await fetch ("http://localhost:3000/movies", {
+        const response = await fetch ("https://bi-1-2-cw-backend.vercel.app/movies", {
             method: "POST",
             headers: {
                 "content-Type":"application/json"
