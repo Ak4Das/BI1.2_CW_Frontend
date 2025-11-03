@@ -30,7 +30,7 @@ const Movies = () => {
   return (
     <div>
       {loading && <p>Loading...</p>}
-      {data?.error && <p>{data?.error}</p>}
+      {error && <p>{error}</p>}
       <ul>
         {data?.map((movie) => (
           <li key={movie._id}>
